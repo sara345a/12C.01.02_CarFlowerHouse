@@ -1,0 +1,135 @@
+h1 {
+  font-family: "Moonflower";
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#sky {
+  fill: rgb(170, 217, 218);
+}
+/* HOUSES */
+
+#house_et {
+  position: absolute;
+  top: 10vw;
+}
+
+#house_et_main {
+  stroke: none;
+  stroke-width: 2;
+  fill: rgb(109, 185, 223);
+}
+
+#house_to_main {
+  stroke: none;
+  stroke-width: 2;
+  fill: rgb(223, 202, 109);
+}
+
+#house_to_roof,
+#house_et_roof {
+  stroke: none;
+  stroke-width: 2;
+  fill: rgb(181, 113, 41);
+}
+
+#house_door {
+  stroke: none;
+  stroke-width: 2;
+  fill: rgb(55, 55, 55);
+}
+
+#house_window_left {
+  stroke: black;
+  stroke-width: 0.8;
+  fill: white;
+}
+
+#house_window_right {
+  stroke: black;
+  stroke-width: 0.8;
+  fill: white;
+}
+
+#road {
+  fill: rgb(34, 34, 34);
+  stroke-width: 1;
+}
+
+#stripes {
+  fill: white;
+}
+
+/* CAR */
+#car {
+  animation: drive 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+#car_body,
+#car_top {
+  stroke: none;
+  stroke-width: 0.8;
+  fill: rgb(23, 13, 56);
+}
+
+#wheel1,
+#wheel2 {
+  stroke: black;
+  stroke-width: 0.8;
+  fill: black;
+  animation: rotate 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+#car_light {
+  stroke: none;
+  stroke-width: 0.8;
+  stroke-width: 0.8;
+  fill: rgb(255, 225, 0);
+}
+
+#car_window {
+  stroke: none;
+  stroke-width: 0.8;
+  stroke-width: 0.8;
+  fill: rgb(79, 149, 209);
+}
+
+/* FLOWER */
+#flower_head circle {
+  fill: rgb(237, 255, 71);
+}
+#flower_head ellipse {
+  fill: rgb(252, 135, 135);
+}
+#flower path {
+  stroke: rgb(51, 195, 51);
+  fill: none;
+  stroke-width: 6px;
+}
+#flower_head {
+  animation: rotate 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+/* ANIMATIONS */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(-70vw);
+  }
+  to {
+    transform: translateX(50vw);
+  }
+}
